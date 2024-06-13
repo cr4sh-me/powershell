@@ -7,7 +7,7 @@ TARGET_ARCH="$(uname -m)"
 if [ "$TARGET_ARCH" == "aarch64" ]; then
     FILE_ARCH="arm64"
 elif [ "$TARGET_ARCH" == "armv7l" ]; then
-    FILE_ARCH="arm"
+    FILE_ARCH="arm32"
 else
     echo "$TARGET_ARCH not supported yet!"
     exit 1
